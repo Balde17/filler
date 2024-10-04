@@ -1,0 +1,12 @@
+
+I- Recupération des entrées:
+    1- Recuperer toutes les lignes renvoyées par le game engine (stdin.lock().lines())
+    2- Traiter les lignes en parcourant une par une avec lines.next()
+        a- Si elle commence par $$$, recuperer le player
+        b- si elle commence par Anfield, recuperer les dimensions de l'anfield et toutes ses lignes.
+        c- si elle commence par Piece, recuperer les dimensions de la pièce, recuperer son dessin à placer et choisir les symboles du player
+
+II- Traitement:
+    1- Chercher toutes les positions valides (libres, où on peut placer la pièce)
+    2- Chercher la position de l'enemi à travers ses symbols
+    3- Selectionner la meilleure position de la pièce et on affiche
